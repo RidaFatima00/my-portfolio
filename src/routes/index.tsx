@@ -35,6 +35,7 @@ function Index() {
           <a href="#about" className="hover:text-primary">About</a>
           <a href="#contact" className="hover:text-primary">Contact</a>
         </nav>
+        <TemplateSwitcher />
       </header>
 
       <section className="mx-auto max-w-6xl px-6 pb-24 pt-20">
