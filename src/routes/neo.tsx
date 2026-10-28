@@ -45,7 +45,7 @@ const ticker = [
   "Art direction",
 ];
 
-function Index() {
+function Neo() {
   return (
     <div className="min-h-screen bg-background font-neo text-foreground">
       <header className="flex items-center justify-between gap-4 border-b border-border px-6 py-4 md:px-10">
