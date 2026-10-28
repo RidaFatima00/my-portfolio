@@ -42,7 +42,7 @@ function Portfolio() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       {/* ---------- top bar ---------- */}
-      <header className="sticky top-0 z-20 border-b border-border bg-background/85 backdrop-blur-md">
+      <header className="sticky top-0 z-20 border-b border-border bg-background">
         <div className="mx-auto flex h-17 max-w-7xl items-center justify-between gap-6 px-6 md:px-10">
           <a href="#top" className="flex items-center gap-3 no-underline">
             <span className="grid size-8 place-items-center border border-border font-display text-lg leading-none">

@@ -38,7 +38,7 @@ const ticker = ["HTML5", "CSS3", "CSS Grid", "Flexbox", "Bootstrap", "Responsive
 function Studio() {
   return (
     <div className="theme-neo min-h-screen bg-background font-neo text-foreground">
-      <header className="sticky top-0 z-20 border-b border-border bg-background/85 backdrop-blur-md">
+      <header className="sticky top-0 z-20 border-b border-border bg-background">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-6">
           <a href="#top" className="flex items-center gap-3 no-underline">
             <span className="grid size-8 place-items-center rounded-md bg-primary font-neo-mono text-sm text-primary-foreground">
