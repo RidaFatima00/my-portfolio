@@ -84,7 +84,7 @@ function Portfolio() {
 
               <Reveal delay={60}>
                 <h1 className="m-0 font-display text-[clamp(56px,8.4vw,128px)] leading-[0.92] tracking-[-0.025em] text-balance">
-                  Simple markup, <em className="text-primary">careful</em> layouts.
+                  <span className="block font-mono text-sm tracking-[0.3em] text-primary uppercase not-italic mb-4">My Portfolio</span>Rida <em className="text-primary">Fatima</em>
                 </h1>
               </Reveal>
 
