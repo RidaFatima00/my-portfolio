@@ -74,7 +74,7 @@ function Portfolio() {
         {/* ---------- hero ---------- */}
         <section className="mx-auto max-w-7xl px-6 pt-16 md:px-10 md:pt-24">
           <div className="flex flex-col items-center text-center">
-            <Reveal className="mb-8 flex items-center gap-3">
+            <Reveal className="mb-6 flex items-center gap-3">
               <span className="size-1.5 rounded-full bg-primary" />
               <span className="font-mono text-[11px] tracking-[0.18em] text-muted-foreground uppercase">
                 {profile.role}
@@ -82,7 +82,16 @@ function Portfolio() {
             </Reveal>
 
             <Reveal delay={60}>
-              <figure className="relative m-0 w-full max-w-[560px]">
+              <h1 className="m-0 font-display text-[clamp(56px,9vw,128px)] leading-[0.9] tracking-[-0.025em] text-balance">
+                <span className="mb-4 block font-mono text-sm tracking-[0.32em] text-primary uppercase not-italic">
+                  My Portfolio
+                </span>
+                Rida <em className="text-primary">Fatima</em>
+              </h1>
+            </Reveal>
+
+            <Reveal delay={120}>
+              <figure className="m-0 mt-12 w-full max-w-[560px]">
                 <div className="aspect-4/5 overflow-hidden border border-border bg-secondary">
                   <img
                     src={portraitImage.src}
@@ -92,14 +101,6 @@ function Portfolio() {
                     className="size-full object-cover"
                   />
                 </div>
-                <figcaption className="absolute inset-x-5 bottom-5 border border-border border-t-4 border-t-accent bg-card/95 px-5 py-5 shadow-xl">
-                  <span className="block font-mono text-[11px] tracking-[0.3em] text-primary uppercase">
-                    My Portfolio
-                  </span>
-                  <span className="mt-2 block font-display text-[clamp(32px,7.5vw,58px)] leading-[1] tracking-[-0.025em] text-foreground">
-                    Rida <em className="text-primary">Fatima</em>
-                  </span>
-                </figcaption>
               </figure>
             </Reveal>
 

@@ -67,12 +67,19 @@ function Studio() {
       <main id="top">
         <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="flex flex-col items-center text-center">
-            <p className="mb-8 inline-flex items-center gap-3 rounded-full border border-border px-4 py-1.5 font-neo-mono text-[11px] tracking-[0.2em] text-muted-foreground uppercase">
+            <p className="mb-6 inline-flex items-center gap-3 rounded-full border border-border px-4 py-1.5 font-neo-mono text-[11px] tracking-[0.2em] text-muted-foreground uppercase">
               <span className="size-1.5 animate-pulse rounded-full bg-primary" />
               {profile.role}
             </p>
 
-            <figure className="relative m-0 w-full max-w-[560px]">
+            <h1 className="m-0 text-[clamp(48px,9vw,104px)] leading-[0.9] font-semibold tracking-tight text-balance">
+              <span className="mb-4 block font-neo-mono text-sm tracking-[0.32em] text-primary uppercase">
+                My Portfolio
+              </span>
+              Rida <span className="text-primary">Fatima</span>
+            </h1>
+
+            <figure className="m-0 mt-12 w-full max-w-[560px]">
               <div className="aspect-4/5 overflow-hidden rounded-3xl border border-border bg-secondary">
                 <img
                   src={portraitImage.src}
@@ -82,14 +89,6 @@ function Studio() {
                   className="size-full object-cover"
                 />
               </div>
-              <figcaption className="absolute inset-x-5 bottom-5 rounded-2xl border border-border border-t-4 border-t-accent bg-card/95 px-5 py-5 shadow-xl">
-                <span className="block font-neo-mono text-[11px] tracking-[0.3em] text-primary uppercase">
-                  My Portfolio
-                </span>
-                <span className="mt-2 block text-[clamp(30px,7vw,54px)] leading-[1] font-semibold tracking-tight text-foreground">
-                  Rida <span className="text-primary">Fatima</span>
-                </span>
-              </figcaption>
             </figure>
 
             <p className="mt-8 max-w-[48ch] text-lg text-muted-foreground">{profile.lede}</p>
