@@ -1,4 +1,4 @@
-import { Link, useMatchRoute } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 
 const templates = [
   { to: "/" as const, label: "01 / Editorial" },
@@ -7,10 +7,10 @@ const templates = [
 
 /**
  * Lets you jump between the portfolio templates. Uses only semantic tokens so
- * it reads correctly on every theme, and never wraps on its own line.
+ * it reads correctly on every theme, and never wraps onto its own line.
  */
 export function TemplateSwitcher({ className = "" }: { className?: string }) {
-  const matchRoute = useMatchRoute();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   return (
     <nav
@@ -18,7 +18,7 @@ export function TemplateSwitcher({ className = "" }: { className?: string }) {
       className={`inline-flex shrink-0 overflow-hidden rounded-md border border-border text-xs ${className}`}
     >
       {templates.map((t) => {
-        const active = Boolean(matchRoute({ to: t.to, exact: true }));
+        const active = pathname === t.to;
         return (
           <Link
             key={t.to}
