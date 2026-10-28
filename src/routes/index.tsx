@@ -73,55 +73,16 @@ function Portfolio() {
       <main id="top">
         {/* ---------- hero ---------- */}
         <section className="mx-auto max-w-7xl px-6 pt-16 md:px-10 md:pt-24">
-          <div className="grid items-end gap-12 md:grid-cols-[1.35fr_1fr] md:gap-16">
-            <div>
-              <Reveal className="mb-9 flex items-center gap-3">
-                <span className="size-1.5 rounded-full bg-primary" />
-                <span className="font-mono text-[11px] tracking-[0.18em] text-muted-foreground uppercase">
-                  {profile.role}
-                </span>
-              </Reveal>
+          <div className="flex flex-col items-center text-center">
+            <Reveal className="mb-8 flex items-center gap-3">
+              <span className="size-1.5 rounded-full bg-primary" />
+              <span className="font-mono text-[11px] tracking-[0.18em] text-muted-foreground uppercase">
+                {profile.role}
+              </span>
+            </Reveal>
 
-              <Reveal delay={60}>
-                <h1 className="m-0 font-display text-[clamp(56px,8.4vw,128px)] leading-[0.92] tracking-[-0.025em] text-balance">
-                  <span className="block font-mono text-sm tracking-[0.3em] text-primary uppercase not-italic mb-4">My Portfolio</span>Rida <em className="text-primary">Fatima</em>
-                </h1>
-              </Reveal>
-
-              <Reveal delay={120}>
-                <p className="mt-10 max-w-[46ch] text-lg text-muted-foreground text-pretty">
-                  {profile.lede}
-                </p>
-              </Reveal>
-
-              <Reveal delay={180} className="mt-10 flex flex-wrap gap-3">
-                <a
-                  href="#work"
-                  className="bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground no-underline transition-opacity hover:opacity-90"
-                >
-                  View my work →
-                </a>
-                <a
-                  href={profile.github}
-                  target="_blank"
-                  rel="noopener"
-                  className="border border-border px-5 py-3 text-sm font-semibold no-underline transition-colors hover:border-primary hover:text-primary"
-                >
-                  GitHub
-                </a>
-                <a
-                  href={profile.netlify}
-                  target="_blank"
-                  rel="noopener"
-                  className="border border-border px-5 py-3 text-sm font-semibold no-underline transition-colors hover:border-primary hover:text-primary"
-                >
-                  Netlify
-                </a>
-              </Reveal>
-            </div>
-
-            <Reveal delay={120} className="md:pb-2">
-              <figure className="m-0">
+            <Reveal delay={60}>
+              <figure className="relative m-0 w-full max-w-[560px]">
                 <div className="aspect-4/5 overflow-hidden border border-border bg-secondary">
                   <img
                     src={portraitImage.src}
@@ -131,11 +92,49 @@ function Portfolio() {
                     className="size-full object-cover"
                   />
                 </div>
-                <figcaption className="flex justify-between pt-3 font-mono text-[11px] tracking-[0.18em] text-muted-foreground uppercase">
-                  <span>{profile.name}</span>
-                  <span>Portfolio</span>
+                <span aria-hidden className="absolute inset-0 bg-background/55" />
+                <figcaption className="absolute inset-0 grid place-items-center px-6">
+                  <div className="drop-shadow-lg">
+                    <span className="block font-mono text-[11px] tracking-[0.34em] text-foreground/80 uppercase md:text-sm">
+                      My Portfolio
+                    </span>
+                    <span className="mt-4 block font-display text-[clamp(42px,9vw,80px)] leading-[0.92] tracking-[-0.025em] text-foreground">
+                      Rida <em className="text-primary">Fatima</em>
+                    </span>
+                  </div>
                 </figcaption>
               </figure>
+            </Reveal>
+
+            <Reveal delay={120}>
+              <p className="mt-9 max-w-[46ch] text-lg text-muted-foreground text-pretty">
+                {profile.lede}
+              </p>
+            </Reveal>
+
+            <Reveal delay={180} className="mt-9 flex flex-wrap justify-center gap-3">
+              <a
+                href="#work"
+                className="bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground no-underline transition-opacity hover:opacity-90"
+              >
+                View my work →
+              </a>
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noopener"
+                className="border border-border px-5 py-3 text-sm font-semibold no-underline transition-colors hover:border-primary hover:text-primary"
+              >
+                GitHub
+              </a>
+              <a
+                href={profile.netlify}
+                target="_blank"
+                rel="noopener"
+                className="border border-border px-5 py-3 text-sm font-semibold no-underline transition-colors hover:border-primary hover:text-primary"
+              >
+                Netlify
+              </a>
             </Reveal>
           </div>
 
