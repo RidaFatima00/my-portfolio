@@ -220,7 +220,7 @@ function Portfolio() {
             </div>
 
             {featured ? (
-              <Reveal className="mb-16 grid gap-10 border-b border-border pb-16 md:grid-cols-[1.6fr_1fr] md:items-end md:gap-14">
+              <Reveal className="mb-16 grid gap-10 border-b border-border pb-16 md:grid-cols-[1.6fr_1fr] md:items-center md:gap-14">
                 <a
                   href={featured.href}
                   target="_blank"
