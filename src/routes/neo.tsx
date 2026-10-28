@@ -73,7 +73,7 @@ function Studio() {
                 {profile.role}
               </p>
               <h1 className="m-0 text-[clamp(44px,7.5vw,104px)] leading-[0.92] font-semibold tracking-tight text-balance">
-                Simple markup, <span className="text-primary">careful</span> layouts.
+                <span className="block font-neo-mono text-sm tracking-[0.3em] text-primary uppercase mb-4">My Portfolio</span>Rida <span className="text-primary">Fatima</span>
               </h1>
               <p className="mt-8 max-w-[48ch] text-lg text-muted-foreground">{profile.lede}</p>
               <div className="mt-9 flex flex-wrap gap-3">

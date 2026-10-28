@@ -83,38 +83,38 @@
  */
 :root {
   --radius: 0.25rem;
-  --background: oklch(0.17 0.006 250);
-  --foreground: oklch(0.93 0.01 85);
-  --card: oklch(0.2 0.008 250);
-  --card-foreground: oklch(0.93 0.01 85);
-  --popover: oklch(0.2 0.008 250);
-  --popover-foreground: oklch(0.93 0.01 85);
-  --primary: oklch(0.78 0.13 70);
-  --primary-foreground: oklch(0.17 0.006 250);
-  --secondary: oklch(0.23 0.008 250);
-  --secondary-foreground: oklch(0.93 0.01 85);
-  --muted: oklch(0.23 0.008 250);
-  --muted-foreground: oklch(0.73 0.015 250);
-  --accent: oklch(0.27 0.01 250);
-  --accent-foreground: oklch(0.93 0.01 85);
+  --background: oklch(0.22 0.07 10);
+  --foreground: oklch(0.95 0.025 80);
+  --card: oklch(0.27 0.08 10);
+  --card-foreground: oklch(0.95 0.025 80);
+  --popover: oklch(0.27 0.08 10);
+  --popover-foreground: oklch(0.95 0.025 80);
+  --primary: oklch(0.82 0.09 5);
+  --primary-foreground: oklch(0.22 0.07 10);
+  --secondary: oklch(0.29 0.08 10);
+  --secondary-foreground: oklch(0.95 0.025 80);
+  --muted: oklch(0.29 0.08 10);
+  --muted-foreground: oklch(0.82 0.035 30);
+  --accent: oklch(0.33 0.09 8);
+  --accent-foreground: oklch(0.95 0.025 80);
   --destructive: oklch(0.6 0.2 25);
   --destructive-foreground: oklch(0.95 0.01 85);
-  --border: oklch(0.93 0.01 85 / 14%);
-  --input: oklch(0.93 0.01 85 / 20%);
-  --ring: oklch(0.78 0.13 70);
+  --border: oklch(0.82 0.09 5 / 22%);
+  --input: oklch(0.82 0.09 5 / 28%);
+  --ring: oklch(0.82 0.09 5);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.2 0.008 250);
-  --sidebar-foreground: oklch(0.93 0.01 85);
-  --sidebar-primary: oklch(0.78 0.13 70);
-  --sidebar-primary-foreground: oklch(0.17 0.006 250);
-  --sidebar-accent: oklch(0.23 0.008 250);
-  --sidebar-accent-foreground: oklch(0.93 0.01 85);
-  --sidebar-border: oklch(0.93 0.01 85 / 14%);
-  --sidebar-ring: oklch(0.78 0.13 70);
+  --sidebar: var(--card);
+  --sidebar-foreground: var(--card);
+  --sidebar-primary: var(--card);
+  --sidebar-primary-foreground: var(--card);
+  --sidebar-accent: var(--card);
+  --sidebar-accent-foreground: var(--card);
+  --sidebar-border: var(--card);
+  --sidebar-ring: var(--card);
 }
 
 .dark {
@@ -142,14 +142,14 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  --sidebar: var(--card);
+  --sidebar-foreground: var(--card);
+  --sidebar-primary: var(--card);
+  --sidebar-primary-foreground: var(--card);
+  --sidebar-accent: var(--card);
+  --sidebar-accent-foreground: var(--card);
+  --sidebar-border: var(--card);
+  --sidebar-ring: var(--card);
 }
 
 /*
@@ -159,25 +159,25 @@
  */
 .theme-neo {
   --radius: 0.5rem;
-  --background: oklch(0.97 0.006 250);
-  --foreground: oklch(0.22 0.02 255);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0.02 255);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.02 255);
-  --primary: oklch(0.5 0.16 245);
-  --primary-foreground: oklch(0.97 0.006 250);
-  --secondary: oklch(0.93 0.01 250);
-  --secondary-foreground: oklch(0.22 0.02 255);
-  --muted: oklch(0.93 0.01 250);
-  --muted-foreground: oklch(0.47 0.02 255);
-  --accent: oklch(0.9 0.015 250);
-  --accent-foreground: oklch(0.22 0.02 255);
+  --background: oklch(0.96 0.025 80);
+  --foreground: oklch(0.28 0.09 10);
+  --card: oklch(0.985 0.012 80);
+  --card-foreground: oklch(0.28 0.09 10);
+  --popover: oklch(0.985 0.012 80);
+  --popover-foreground: oklch(0.28 0.09 10);
+  --primary: oklch(0.42 0.14 10);
+  --primary-foreground: oklch(0.96 0.025 80);
+  --secondary: oklch(0.9 0.05 5);
+  --secondary-foreground: oklch(0.28 0.09 10);
+  --muted: oklch(0.92 0.035 20);
+  --muted-foreground: oklch(0.45 0.07 10);
+  --accent: oklch(0.88 0.07 5);
+  --accent-foreground: oklch(0.28 0.09 10);
   --destructive: oklch(0.58 0.2 25);
   --destructive-foreground: oklch(0.97 0.006 250);
-  --border: oklch(0.22 0.02 255 / 14%);
-  --input: oklch(0.22 0.02 255 / 20%);
-  --ring: oklch(0.5 0.16 245);
+  --border: oklch(0.42 0.14 10 / 18%);
+  --input: oklch(0.42 0.14 10 / 24%);
+  --ring: oklch(0.42 0.14 10);
 }
 
 @utility neo-grid {
