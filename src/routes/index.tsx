@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { TemplateSwitcher } from "@/components/TemplateSwitcher";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [

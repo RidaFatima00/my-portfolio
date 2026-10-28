@@ -47,7 +47,7 @@ const ticker = [
 
 function Neo() {
   return (
-    <div className="min-h-screen bg-background font-neo text-foreground">
+    <div className="theme-neo min-h-screen bg-background font-neo text-foreground">
       <header className="flex items-center justify-between gap-4 border-b border-border px-6 py-4 md:px-10">
         <span className="font-neo-mono text-xs uppercase tracking-[0.25em]">
           Alex&nbsp;Morgan
