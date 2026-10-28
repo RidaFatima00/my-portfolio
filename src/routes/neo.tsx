@@ -52,7 +52,15 @@ function Studio() {
             <a href="#skills" className="hover:text-primary">Skills</a>
             <a href="#contact" className="hover:text-primary">Contact</a>
           </nav>
-          <TemplateSwitcher />
+          <div className="flex items-center gap-3">
+            <TemplateSwitcher />
+            <a
+              href={`mailto:${profile.email}`}
+              className="hidden rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground no-underline transition-opacity hover:opacity-90 md:inline-flex"
+            >
+              Get in touch →
+            </a>
+          </div>
         </div>
       </header>
 
