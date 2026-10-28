@@ -78,30 +78,31 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Portfolio Templates — Alex Morgan" },
+      { title: "Rida Fatima — Front-End Web Developer" },
       {
         name: "description",
         content:
-          "Two portfolio templates for the same work: a warm editorial layout and a dark terminal index.",
+          "Portfolio of Rida Fatima, front-end web developer: clean, responsive HTML & CSS pages, live on Netlify.",
       },
-      { name: "author", content: "Alex Morgan" },
-      { property: "og:title", content: "Portfolio Templates — Alex Morgan" },
+      { name: "author", content: "Rida Fatima" },
+      { property: "og:title", content: "Rida Fatima — Front-End Web Developer" },
       {
         property: "og:description",
         content:
-          "Two portfolio templates for the same work: a warm editorial layout and a dark terminal index.",
+          "Clean, responsive web pages built with HTML, CSS and Bootstrap — seven live projects on Netlify.",
       },
-      { property: "og:type", content: "website" },
+      { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500&display=swap" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap",
+      },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
