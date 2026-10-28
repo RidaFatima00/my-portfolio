@@ -66,44 +66,21 @@ function Studio() {
 
       <main id="top">
         <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-          <div className="grid items-center gap-12 md:grid-cols-[1.2fr_1fr]">
-            <div>
-              <p className="mb-6 inline-flex items-center gap-3 rounded-full border border-border px-4 py-1.5 font-neo-mono text-[11px] tracking-[0.2em] text-muted-foreground uppercase">
-                <span className="size-1.5 animate-pulse rounded-full bg-primary" />
-                {profile.role}
-              </p>
-              <h1 className="m-0 text-[clamp(44px,7.5vw,104px)] leading-[0.92] font-semibold tracking-tight text-balance">
-                <span className="block font-neo-mono text-sm tracking-[0.3em] text-primary uppercase mb-4">My Portfolio</span>Rida <span className="text-primary">Fatima</span>
-              </h1>
-              <p className="mt-8 max-w-[48ch] text-lg text-muted-foreground">{profile.lede}</p>
-              <div className="mt-9 flex flex-wrap gap-3">
-                <a
-                  href="#work"
-                  className="rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground no-underline transition-opacity hover:opacity-90"
-                >
-                  View my work →
-                </a>
-                <a
-                  href={profile.github}
-                  target="_blank"
-                  rel="noopener"
-                  className="rounded-lg border border-border px-5 py-3 text-sm font-semibold no-underline hover:border-primary hover:text-primary"
-                >
-                  GitHub
-                </a>
-                <a
-                  href={profile.netlify}
-                  target="_blank"
-                  rel="noopener"
-                  className="rounded-lg border border-border px-5 py-3 text-sm font-semibold no-underline hover:border-primary hover:text-primary"
-                >
-                  Netlify
-                </a>
-              </div>
-            </div>
+          <div className="flex flex-col items-center text-center">
+            <p className="mb-6 inline-flex items-center gap-3 rounded-full border border-border px-4 py-1.5 font-neo-mono text-[11px] tracking-[0.2em] text-muted-foreground uppercase">
+              <span className="size-1.5 animate-pulse rounded-full bg-primary" />
+              {profile.role}
+            </p>
 
-            <figure className="m-0">
-              <div className="aspect-4/5 overflow-hidden rounded-2xl border border-border bg-secondary">
+            <h1 className="m-0 text-[clamp(48px,9vw,104px)] leading-[0.9] font-semibold tracking-tight text-balance">
+              <span className="mb-4 block font-neo-mono text-sm tracking-[0.32em] text-primary uppercase">
+                My Portfolio
+              </span>
+              Rida <span className="text-primary">Fatima</span>
+            </h1>
+
+            <figure className="m-0 mt-12 w-full max-w-[560px]">
+              <div className="aspect-4/5 overflow-hidden rounded-3xl border border-border bg-secondary">
                 <img
                   src={portraitImage.src}
                   alt={portraitImage.alt}
@@ -113,6 +90,33 @@ function Studio() {
                 />
               </div>
             </figure>
+
+            <p className="mt-8 max-w-[48ch] text-lg text-muted-foreground">{profile.lede}</p>
+
+            <div className="mt-9 flex flex-wrap justify-center gap-3">
+              <a
+                href="#work"
+                className="rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground no-underline transition-opacity hover:opacity-90"
+              >
+                View my work →
+              </a>
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noopener"
+                className="rounded-lg border border-border px-5 py-3 text-sm font-semibold no-underline hover:border-primary hover:text-primary"
+              >
+                GitHub
+              </a>
+              <a
+                href={profile.netlify}
+                target="_blank"
+                rel="noopener"
+                className="rounded-lg border border-border px-5 py-3 text-sm font-semibold no-underline hover:border-primary hover:text-primary"
+              >
+                Netlify
+              </a>
+            </div>
           </div>
 
           <div className="mt-16 grid gap-px overflow-hidden rounded-xl border border-border bg-border md:grid-cols-4">
