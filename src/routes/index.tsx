@@ -92,16 +92,13 @@ function Portfolio() {
                     className="size-full object-cover"
                   />
                 </div>
-                <span aria-hidden className="absolute inset-0 bg-background/55" />
-                <figcaption className="absolute inset-0 grid place-items-center px-6">
-                  <div className="drop-shadow-lg">
-                    <span className="block font-mono text-[11px] tracking-[0.34em] text-foreground/80 uppercase md:text-sm">
-                      My Portfolio
-                    </span>
-                    <span className="mt-4 block font-display text-[clamp(42px,9vw,80px)] leading-[0.92] tracking-[-0.025em] text-foreground">
-                      Rida <em className="text-primary">Fatima</em>
-                    </span>
-                  </div>
+                <figcaption className="absolute inset-x-5 bottom-5 border border-border border-t-4 border-t-accent bg-card/95 px-5 py-5 shadow-xl">
+                  <span className="block font-mono text-[11px] tracking-[0.3em] text-primary uppercase">
+                    My Portfolio
+                  </span>
+                  <span className="mt-2 block font-display text-[clamp(32px,7.5vw,58px)] leading-[1] tracking-[-0.025em] text-foreground">
+                    Rida <em className="text-primary">Fatima</em>
+                  </span>
                 </figcaption>
               </figure>
             </Reveal>

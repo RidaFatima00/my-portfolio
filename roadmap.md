@@ -8,3 +8,5 @@
   - [x] `/` — Rida's real portfolio, new dark "Graphite" theme
   - [x] `/neo` — same real content in a light "Studio" theme
   - [x] Verify in the preview (both themes: 8/8 images load, 6 live links, no console errors)
+- [ ] Name shown in front of the portrait, centered — without a colour wash over the photo
+  - [ ] Re-check both pages in the preview after the change

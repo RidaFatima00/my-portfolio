@@ -82,16 +82,13 @@ function Studio() {
                   className="size-full object-cover"
                 />
               </div>
-              <span aria-hidden className="absolute inset-0 rounded-3xl bg-primary/55" />
-              <figcaption className="absolute inset-0 grid place-items-center px-6">
-                <div className="drop-shadow-lg">
-                  <span className="block font-neo-mono text-[11px] tracking-[0.34em] text-primary-foreground/85 uppercase md:text-sm">
-                    My Portfolio
-                  </span>
-                  <span className="mt-4 block text-[clamp(40px,9vw,76px)] leading-[0.95] font-semibold tracking-tight text-primary-foreground">
-                    Rida <span className="text-accent">Fatima</span>
-                  </span>
-                </div>
+              <figcaption className="absolute inset-x-5 bottom-5 rounded-2xl border border-border border-t-4 border-t-accent bg-card/95 px-5 py-5 shadow-xl">
+                <span className="block font-neo-mono text-[11px] tracking-[0.3em] text-primary uppercase">
+                  My Portfolio
+                </span>
+                <span className="mt-2 block text-[clamp(30px,7vw,54px)] leading-[1] font-semibold tracking-tight text-foreground">
+                  Rida <span className="text-primary">Fatima</span>
+                </span>
               </figcaption>
             </figure>
 
